@@ -16,6 +16,9 @@
 		EC257A0829BB64AE003A158F /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EC257A0529BB64AE003A158F /* sound-rise.mp3 */; };
 		EC257A0929BB64AE003A158F /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EC257A0629BB64AE003A158F /* sound-ding.mp3 */; };
 		EC257A0A29BB64AE003A158F /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EC257A0729BB64AE003A158F /* sound-tap.mp3 */; };
+		EC257A1229BBB5CF003A158F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC257A1129BBB5CF003A158F /* Constants.swift */; };
+		EC257A1429BBC414003A158F /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC257A1329BBC414003A158F /* ListItemView.swift */; };
+		EC257A1629BBCC9B003A158F /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC257A1529BBCC9B003A158F /* HideKeyboardExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		EC257A0629BB64AE003A158F /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
 		EC257A0729BB64AE003A158F /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
 		EC257A0B29BB64E4003A158F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EC257A1129BBB5CF003A158F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EC257A1329BBC414003A158F /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		EC257A1529BBCC9B003A158F /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				EC2579F329BA85B2003A158F /* ContentView.swift */,
+				EC257A1329BBC414003A158F /* ListItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -121,6 +128,7 @@
 		EC257A0F29BB6551003A158F /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				EC257A1129BBB5CF003A158F /* Constants.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -128,6 +136,7 @@
 		EC257A1029BB6559003A158F /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				EC257A1529BBCC9B003A158F /* HideKeyboardExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -205,8 +214,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC257A1229BBB5CF003A158F /* Constants.swift in Sources */,
 				EC2579FB29BA85B3003A158F /* Persistence.swift in Sources */,
+				EC257A1629BBCC9B003A158F /* HideKeyboardExtension.swift in Sources */,
 				EC2579F429BA85B2003A158F /* ContentView.swift in Sources */,
+				EC257A1429BBC414003A158F /* ListItemView.swift in Sources */,
 				EC2579FE29BA85B3003A158F /* Devote.xcdatamodeld in Sources */,
 				EC2579F229BA85B2003A158F /* DevoteApp.swift in Sources */,
 			);
