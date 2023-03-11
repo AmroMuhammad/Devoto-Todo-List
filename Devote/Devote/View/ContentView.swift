@@ -83,7 +83,7 @@ struct ContentView: View {
                     
                     List {
                         ForEach(items) { item in
-                            ListItemView(task: item.task ?? "N/A", date: item.timestamp ?? Date())
+                            ListItemView(item: item)
                         }
                         .onDelete(perform: deleteItems)
                     }//: List

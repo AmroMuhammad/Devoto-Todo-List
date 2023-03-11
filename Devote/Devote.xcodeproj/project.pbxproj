@@ -22,6 +22,7 @@
 		EC257A1829BBDBDE003A158F /* backgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC257A1729BBDBDE003A158F /* backgroundImageView.swift */; };
 		EC257A1A29BBF7E4003A158F /* newTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC257A1929BBF7E4003A158F /* newTaskItemView.swift */; };
 		EC257A1C29BBFD65003A158F /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC257A1B29BBFD65003A158F /* BlankView.swift */; };
+		EC257A1E29BC0650003A158F /* CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC257A1D29BC0650003A158F /* CheckboxStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		EC257A1729BBDBDE003A158F /* backgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backgroundImageView.swift; sourceTree = "<group>"; };
 		EC257A1929BBF7E4003A158F /* newTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newTaskItemView.swift; sourceTree = "<group>"; };
 		EC257A1B29BBFD65003A158F /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
+		EC257A1D29BC0650003A158F /* CheckboxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		EC257A0E29BB654A003A158F /* Style */ = {
 			isa = PBXGroup;
 			children = (
+				EC257A1D29BC0650003A158F /* CheckboxStyle.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				EC2579F429BA85B2003A158F /* ContentView.swift in Sources */,
 				EC257A1429BBC414003A158F /* ListItemView.swift in Sources */,
 				EC2579FE29BA85B3003A158F /* Devote.xcdatamodeld in Sources */,
+				EC257A1E29BC0650003A158F /* CheckboxStyle.swift in Sources */,
 				EC2579F229BA85B2003A158F /* DevoteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
