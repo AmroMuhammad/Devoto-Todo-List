@@ -45,6 +45,7 @@ struct ContentView: View {
                         
                         Button {
                             isDarkMode.toggle()
+                            playSound(sound: "sound-tap", type: ".mp3")
                         } label: {
                             Image(systemName: isDarkMode ? "moon.circle.fill" : "moon.circle")
                                 .resizable()
@@ -64,6 +65,7 @@ struct ContentView: View {
                     
                     Button {
                         showNewTaskItem = true
+                        playSound(sound: "sound-ding", type: ".mp3") 
                     } label: {
                             Image(systemName: "plus.circle")
                             .font(.system(size: 30, weight: .semibold, design: .rounded))
@@ -94,9 +96,13 @@ struct ContentView: View {
                     .frame(maxWidth: 640)
                     
                 } //: VStack
+                .blur(radius: showNewTaskItem ? 8.0 : 0.0, opaque: false)
+                .transition(.move(edge: .bottom))
+                .animation(.easeOut(duration: 0.5))
                 
                 if(showNewTaskItem){
-                    BlankView()
+                    BlankView(backgroundColor: isDarkMode ? .black : .gray
+                              , backgroundOpacity: isDarkMode ? 0.3 : 0.5)
                         .onTapGesture {
                             withAnimation {
                                  showNewTaskItem = false
@@ -105,7 +111,13 @@ struct ContentView: View {
                     newTaskItemView(isShowing: $showNewTaskItem)
                 }
             } //: Zstack
-            .background(backgroundImageView())
+            .background(
+                backgroundImageView()
+                    .offset(x: showNewTaskItem ? 90 : 20)
+                    .blur(radius: showNewTaskItem ? 8.0 : 0.0, opaque: false)
+                    .animation(.easeOut)
+
+            )
             .background(backgroundGradient.ignoresSafeArea(.all))
         }//: NavigationView
         .navigationViewStyle(.stack)

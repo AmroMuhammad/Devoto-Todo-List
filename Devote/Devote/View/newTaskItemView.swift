@@ -53,6 +53,7 @@ struct newTaskItemView: View {
                 
                 Button(action: {
                     addItem()
+                    playSound(sound: "sound-ding", type: ".mp3")
                     textFieldString = ""
                     hideKeyboard()
                     isShowing = false
@@ -62,6 +63,11 @@ struct newTaskItemView: View {
                         .font(.system(size: 24, weight: .bold, design: .rounded))
                     Spacer()
                 })
+                .onTapGesture {
+                    if isButtonDisabled {
+                        playSound(sound: "sound-tap", type: ".mp3")
+                    }
+                }
                 .padding()
                 .foregroundColor(.white)
                 .background(
